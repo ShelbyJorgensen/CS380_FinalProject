@@ -20,6 +20,12 @@ public class ManageFlightsController {
     private Label ChangeFlightTitle;
 
     @FXML
+    private Label ClassLabel;
+
+    @FXML
+    private TextField ClassText;
+
+    @FXML
     private Label CustomerNameLabel;
 
     @FXML
@@ -62,7 +68,13 @@ public class ManageFlightsController {
     private TableColumn<?, ?> Table;
 
     @FXML
-    private Button UpdateButton;
+    private Button Update1Button;
+
+    @FXML
+    private Button Update2Button;
+
+    @FXML
+    private Label UpdateFlightLabel;
 
     @FXML
     private Button UpdateTableButton;
