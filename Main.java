@@ -16,7 +16,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbconnector", "root", "AspenBoots22");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbconnector", "root", "");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
