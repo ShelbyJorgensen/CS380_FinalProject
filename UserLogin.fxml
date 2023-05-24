@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="500.0" minWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserLoginController">
-   <children>
-   	  <Pane layoutX="-4.0" prefHeight="502.0" prefWidth="706.0" style="-fx-background-color: #3399ff;" />	
-      <Button fx:id="CustomerLoginButton" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onAction="#Login" text="Login" />
-      <TextField fx:id="CustomerUsernameText" layoutX="250.0" layoutY="150.0" prefHeight="26.0" prefWidth="155.0" promptText="Enter Customer Username" />
-      <TextField fx:id="CustomerPasswordText" layoutX="250.0" layoutY="220.0" promptText="Enter Customer Password" />
-      <Label fx:id="CustomerUsernameLabel" layoutX="250.0" layoutY="117.0" text="Username" />
-      <Label fx:id="CustomerPasswordLabel" layoutX="250.0" layoutY="194.0" text="Password" />
-      <Label fx:id="CustomerLoginLabel" layoutX="250.0" layoutY="50.0" text="CUSTOMER LOGIN">
-         <font>
-            <Font name="Arial Bold" size="24.0" />
-         </font>
-      </Label>
-      <ImageView fx:id="ABSPic" fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../OneDrive/Documents/CWU%20CS%20380/ABSAirline.JPG" />
-         </image>
-      </ImageView>
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+	<!-- TODO Add Nodes -->
 </AnchorPane>
+
