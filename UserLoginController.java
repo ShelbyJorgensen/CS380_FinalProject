@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -17,6 +18,8 @@ public class UserLoginController {
 	
 	@FXML
 	private TextField CustomerUsernameText;
+	@FXML
+	private Label UserLoginSuccess;
 	
 	public void UserLogin(ActionEvent event) throws Exception {
 		Connection connection = null;
@@ -39,6 +42,7 @@ public class UserLoginController {
 	        String name = rs.getString("username");
 	        if(name.equals(CustomerUsernameText.getText())) {
 	        	isValid = true;
+	        	UserLoginSuccess.setText("Successful Login!");
 	        }
 	    }
 		
