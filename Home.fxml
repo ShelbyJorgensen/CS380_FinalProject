@@ -9,11 +9,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
    <children>
       <Pane layoutX="13.0" layoutY="10.0" prefHeight="482.0" prefWidth="673.0" style="-fx-background-color: #E8E8E8;" />
-      <Pane layoutX="30.0" layoutY="30.0" prefHeight="162.0" prefWidth="384.0" style="-fx-background-color: #99ccff;">
+      <Pane layoutX="30.0" layoutY="30.0" opacity="0.8" prefHeight="162.0" prefWidth="384.0" style="-fx-background-color: #99ccff;">
          <children>
             <ImageView fitHeight="104.0" fitWidth="129.0" layoutX="40.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -22,7 +21,7 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="468.0" layoutY="24.0" prefHeight="454.0" prefWidth="200.0" style="-fx-background-color: #ff3300;">
+      <Pane layoutX="468.0" layoutY="24.0" opacity="0.8" prefHeight="454.0" prefWidth="200.0" style="-fx-background-color: #ff3300;">
          <children>
             <TextArea editable="false" layoutX="17.0" layoutY="227.0" prefHeight="200.0" prefWidth="166.0" text="Here at ABS Airline we are &#10;determined to give all our &#10;customers the best &#10;experience getting you &#10;to any destination, and &#10;ensuring you a safe trip &#10;back home. Anywhere you&#10;want to go, always be sure&#10;to book your flight&#10;with ABS Airline.">
                <font>
@@ -32,9 +31,9 @@
             <Pane layoutX="43.0" layoutY="14.0" prefHeight="174.0" prefWidth="129.0" style="-fx-background-color: #ffffff;" />
          </children>
       </Pane>
-      <Pane layoutX="30.0" layoutY="216.0" prefHeight="261.0" prefWidth="384.0" style="-fx-background-color: #99ccff;" />
-      <Button layoutX="546.0" layoutY="164.0" mnemonicParsing="false" text="Employee" />
-      <Button layoutX="568.0" layoutY="111.0" mnemonicParsing="false" text="Users" />
+      <Pane layoutX="30.0" layoutY="216.0" opacity="0.8" prefHeight="261.0" prefWidth="384.0" style="-fx-background-color: #99ccff;" />
+      <Button fx:id="Admin" layoutX="546.0" layoutY="164.0" mnemonicParsing="false" onAction="#Login" text="Employee" />
+      <Button fx:id="Users" layoutX="568.0" layoutY="111.0" mnemonicParsing="false" onAction="#Login" text="Users" />
       <Label layoutX="550.0" layoutY="57.0" text="Login">
          <font>
             <Font name="Arial" size="24.0" />
