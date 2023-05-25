@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane minHeight="500.0" minWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageFlightsController">
+   <children>
+      <Pane fx:id="Pane" layoutX="-2.0" prefHeight="501.0" prefWidth="707.0" style="-fx-background-color: #3399ff;">
+         <children>
+            <Label layoutX="556.0" layoutY="221.0" text="Old Flight ID" />
+            <Label layoutX="553.0" layoutY="283.0" text="New Flight ID" />
+            <Label layoutX="96.0" layoutY="148.0" prefHeight="17.0" prefWidth="72.0" text="Customer ID" />
+            <Label layoutX="109.0" layoutY="221.0" text="Flight ID" />
+         </children>
+      </Pane>
+      <Button fx:id="ViewFlightsButton" layoutX="287.0" layoutY="147.0" mnemonicParsing="false" onAction="#ViewFlights" text="View Available Flights" />
+      <TextField fx:id="CancelFlightID" layoutX="55.0" layoutY="242.0" promptText="Enter Flight ID" />
+      <TextField fx:id="CancelCustomerID" layoutX="55.0" layoutY="177.0" promptText="Enter Customer ID" />
+      <TextField fx:id="NewFlightID" layoutX="516.0" layoutY="303.0" promptText="Enter New Flight ID" />
+      <Button fx:id="CancelButton" layoutX="104.0" layoutY="356.0" mnemonicParsing="false" onAction="#CancelFlight" text="Cancel" />
+      <Label layoutX="77.0" layoutY="88.0" text="Cancel Flight">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="536.0" layoutY="88.0" text="Update Flight">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="151.0" text="Customer ID" />
+      <Button fx:id="UpdateFlights" layoutX="563.0" layoutY="356.0" mnemonicParsing="false" onAction="#UpdateFlight" text="Update" />
+      <TextField fx:id="OldFlightID" layoutX="516.0" layoutY="242.0" promptText="Enter Old Flight ID" />
+      <TextArea fx:id="FlightView" layoutX="253.0" layoutY="190.0" prefHeight="200.0" prefWidth="200.0" text="View Available Flights:" wrapText="true" />
+      <Label layoutX="272.0" layoutY="49.0" text="Change Flight">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="283.0" layoutY="190.0" />
+      <TextField fx:id="UpdateCustomerID" layoutX="517.0" layoutY="177.0" promptText="Enter Customer ID" />
+   </children>
 </AnchorPane>
-
